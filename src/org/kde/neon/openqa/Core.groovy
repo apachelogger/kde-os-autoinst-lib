@@ -18,8 +18,11 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-package org.kde.neon.openqa
+package org.kde.neon.openqa;
 
-standardNode = node;
+@NonCPS
+def standardNode() {
+   node{}
+   }
 
 return this;
