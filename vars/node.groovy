@@ -18,8 +18,10 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-def node(label = null, body) {
+__standardNode = node
+
+def call(label = null, body) {
   echo 'wuuh'
-  throw
+  node(label) { body() }
   error "autobots roll out!"
 }
