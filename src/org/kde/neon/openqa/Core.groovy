@@ -18,6 +18,8 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-def node(label = null, body) {
-  error "autobots roll out!"
-}
+package org.kde.neon.openqa
+
+standardNode = node;
+
+return this;

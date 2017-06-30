@@ -18,10 +18,8 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-__standardNode = node
-
 def call(label = null, body) {
-  echo 'wuuh'
-  node(label) { body() }
+  def core = new org.kde.neon.openqa.Core()
+  core.standardNode(label) { body() }
   error "autobots roll out!"
 }
