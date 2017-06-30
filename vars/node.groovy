@@ -19,5 +19,7 @@
 */
 
 def node(label = null, body) {
+  echo 'wuuh'
+  throw
   error "autobots roll out!"
 }
